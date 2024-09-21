@@ -1,0 +1,74 @@
+<!-- 
+Summary of the Code:
+- The structure of this HTML document includes the basic elements like <head> and <body>.
+- In the <head> section, meta tags are used to specify character encoding (UTF-8) and ensure responsiveness with the viewport meta tag.
+- Several navigation links are created using the <a> tag, leading to various pages (sign-up, about, etc.).
+- An image is embedded using the <img> tag, and the image is centered using the deprecated <center> tag.
+- The <h1> and <h3> heading tags are used to create text headings, and a button element (<button>) is included for sign-up functionality (but it doesn’t link anywhere yet).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding and sets the page's title -->
+    <meta charset="UTF-8">
+    <!-- Ensures the webpage is responsive by adjusting it to the screen width of the device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title that appears on the browser tab -->
+    <title>zeroda</title>
+</head>
+<link rel="stylesheet" href="/Week-1/zeroda_landing_page/style.css">
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <a id="zeroda" href="https://signup.zerodha.com/"> 
+                <img src="/Week-1/zeroda_landing_page/logo.svg" width="100">
+            </a>
+        </div>
+        <div id="navbar-right">
+            <a class="navigation property" href="https://signup.zerodha.com/">Sign-Up</a>
+            <a class="navigation property" href="https://zerodha.com/about/">About</a>
+            <a class="navigation property" href="https://signup.zerodha.com/">Products</a>
+            <a class="navigation property" href="https://signup.zerodha.com/">Pricing</a>
+            <a class="navigation property" href="https://signup.zerodha.com/">Support</a>
+        </div>
+    </div>
+    <!-- Centers the image on the page -->
+    <center>
+        <!-- Displays an image with a height of 500px (image file path needs to be correct) -->
+        <img src="/Week-1/zeroda_landing_page/landing.png" height="500px">
+    </center>    
+
+    <div>
+        <center>
+            <!-- Main headline (H1) to grab attention -->
+            <h1>
+                Invest in everything
+            </h1>
+            <!-- Subheading describing the platform's services -->
+            Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
+        </center>    
+    </div>
+
+    <div>
+      <center>
+        <!-- Heading with a button that invites users to sign up -->
+        <h3>
+              <a href="https://zerodha.com/open-account"> 
+                <span id="button">Sign up for Free</span>
+              </a>
+        </h3>
+      </center>  
+    </div>
+</body>
+</html>
+
+<!-- 
+
+*******************Key Points:------------------
+Links and Navigation: All the anchor tags <a> are navigation links. Some of them (like Products, Pricing, and Support) point to the signup page. You might want to update them to the correct URLs.
+Centering: The <center> tag is used to center elements on the page. Although it's effective here, it's considered deprecated in HTML5. You could achieve the same effect using CSS (text-align: center;).
+Image: Make sure the image file path /Week-1/01_html/landing.png is correct. Otherwise, the image won't display.
+Button: The button is for signing up, but as a standalone HTML button, it doesn't yet perform any action (e.g., linking to a sign-up form). If you want it to navigate somewhere, you can wrap it in an anchor tag or add JavaScript functionality later.
+
+-->
