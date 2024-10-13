@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> TODO LIST</h1>
+
+    <h4>
+        <ol>
+            <li>Go to work</li>
+            <li>Eat</li>
+            <li>Go to work again</li>
+            <li>Sleep</li>
+        </ol>
+    </h4>
+
+    <input type="text"> 
+    <button onclick="addtodo()" type="submit">
+        ADD TASK
+    </button >
+    
+    <script>
+   function addtodo (){
+    const  input = document.querySelector("input");
+    const value = input.value;
+    console.log(value);
+       
+   }
+    
+   let ctr = 0;
+   function callback(){
+    ctr = ctr + 1;
+    // console.log(ctr);
+    const el = document.querySelectorAll("li")[3]
+    el.innerHTML = ctr;
+   }
+   setInterval(callback ,1000);
+    </script>
+</body>
+</html>
