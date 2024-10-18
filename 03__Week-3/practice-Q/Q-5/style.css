@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
+
+#box {
+    width: 350px;
+    height: 600px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+#imag {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content {
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+}
+#Add_Friend{
+    width: 40%;
+    background-color: aquamarine;
+    border: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+#remove{
+    width: 40%;
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+#status{
+    font-size: x-large;
+    color: red;
+}
